@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Site Usage</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Roboto, sans-serif;
+        margin: 0;
+        padding: 15px;
+        width: 320px;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #2c3e50;
+      }
+
+      #totaltime {
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 10px;
+        background-color: #ecf0f1;
+        padding: 8px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      #stats {
+        margin-bottom: 15px;
+      }
+
+      #stats div {
+        padding: 6px 10px;
+        margin-bottom: 5px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.807);
+      }
+
+      .domain {
+        font-weight: 500;
+        color: #2d3436;
+      }
+
+      .time {
+        color: #636e72;
+      }
+
+      #resetBtn {
+        width: 100%;
+        padding: 10px;
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+
+      #resetBtn:hover {
+        background-color: #c0392b;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📊 Site Usage Today</h1>
+    <div id="totaltime">Loading...</div>
+    <div id="stats">Loading data...</div>
+    <button id="resetBtn">Reset</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
